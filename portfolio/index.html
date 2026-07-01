@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Thite | DevOps &amp; Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-aurora" aria-hidden="true"><span></span></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">AT.</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <div class="badge-dot"></div>
+            Open to DevOps &amp; Cloud Roles
+          </div>
+          <div class="hero-name">
+            Abhishek <span class="hero-name-accent">Thite</span>
+          </div>
+          <div id="hero-roles" class="hero-roles"></div>
+
+          <p class="hero-desc">
+            DevOps and Cloud enthusiast with hands-on experience in AWS,
+            Terraform, Docker, Kubernetes, and CI/CD pipelines. Passionate about
+            building scalable cloud-native applications and automating
+            infrastructure.
+          </p>
+
+          <div class="tags" style="margin-bottom: 6px">
+            <span class="tag">AWS</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="#contact">Get In Touch</a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" download
+              >Download Resume</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="stat-card glass">
+            <div class="stat-card-head">Live Visitor Counter</div>
+            <div class="stat-row">
+              <div class="stat-icon">👁</div>
+              <div>
+                <div class="stat-label">Total Visitors</div>
+                <div class="stat-value">
+                  <span id="visitor-count">Loading...</span>
+                </div>
+              </div>
+            </div>
+            <div class="stat-stack">
+              <span class="tag">S3</span>
+              <span class="tag">CloudFront</span>
+              <span class="tag">API Gateway</span>
+              <span class="tag">Lambda</span>
+              <span class="tag">DynamoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SKILLS -->
+    <div class="section-wrap" id="skills">
+      <div class="section-eyebrow">What I Work With</div>
+      <div class="section-heading">Technical Skills</div>
+      <p class="section-sub">
+        Cloud-first tools, DevOps automation, and full-stack development.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card glass">
+          <div class="skill-card-title">Programming Languages</div>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">Cloud & Infrastructure</div>
+          <div class="tags">
+            <span class="tag">AWS EC2</span><span class="tag">S3</span>
+            <span class="tag">IAM</span><span class="tag">VPC</span>
+            <span class="tag">CloudFront</span><span class="tag">Route 53</span>
+            <span class="tag">Lambda</span><span class="tag">DynamoDB</span>
+            <span class="tag">API Gateway</span>
+            <span class="tag">Terraform</span
+            ><span class="tag">CloudFormation</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">DevOps Tools</div>
+          <div class="tags">
+            <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+            <span class="tag">Jenkins</span><span class="tag">Git</span>
+            <span class="tag">GitHub</span><span class="tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">CI/CD & Automation</div>
+          <div class="tags">
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Jenkins Pipelines</span>
+            <span class="tag">Git Workflows</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">Web Technologies (Basic)</div>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">ReactJS</span><span class="tag">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">Frameworks & Libraries(Basic)</div>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Leaflet.js</span>
+            <span class="tag">Socket.io</span>
+          </div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-card-title">Databases & Networking</div>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Port Forwarding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILL PROFICIENCY -->
+    <div class="section-wrap" id="proficiency">
+      <div class="section-eyebrow">How Well I Know It</div>
+      <div class="section-heading">Skill Proficiency</div>
+      <p class="section-sub">
+        Self-assessed proficiency across core tools and technologies.
+      </p>
+      <div class="bars-grid">
+        <div class="bar-card glass">
+          <div class="bar-card-title">Cloud & DevOps</div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">AWS (EC2, S3, Lambda, etc.)</span
+              ><span class="bar-pct">70%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Docker</span
+              ><span class="bar-pct">75%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Kubernetes</span
+              ><span class="bar-pct">65%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Terraform</span
+              ><span class="bar-pct">65%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Jenkins & GitHub Actions</span
+              ><span class="bar-pct">70%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-card glass">
+          <div class="bar-card-title">Programming & Backend</div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">JavaScript / Node.js</span
+              ><span class="bar-pct">50%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Python</span
+              ><span class="bar-pct">50%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">Java</span
+              ><span class="bar-pct">60%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="60"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">MongoDB & SQL</span
+              ><span class="bar-pct">40%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="72"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span class="bar-label">FastAPI / Express.js</span
+              ><span class="bar-pct">40%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="76"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARCHITECTURE (signature section) -->
+    <div class="section-wrap" id="architecture">
+      <div class="section-eyebrow">How It's Built</div>
+      <div class="section-heading">Cloud Resume Architecture</div>
+      <p class="section-sub">
+        The real request flow behind this site — static delivery and the
+        serverless visitor counter.
+      </p>
+
+      <div class="flow-diagram">
+        <div class="flow-row glass">
+          <div class="flow-row-label">Static site delivery</div>
+          <div class="flow-node">Browser</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node hi">CloudFront</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">S3 (static hosting)</div>
+        </div>
+        <div class="flow-row glass">
+          <div class="flow-row-label">Visitor counter (serverless)</div>
+          <div class="flow-node">Browser fetch()</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node hi">API Gateway</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node hi">Lambda (Python)</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">DynamoDB</div>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card glass">
+          <div class="service-icon">🪣</div>
+          <div class="service-name">Amazon S3</div>
+          <div class="service-desc">
+            Hosts the static site — HTML, CSS, and JS.
+          </div>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon">🌐</div>
+          <div class="service-name">CloudFront</div>
+          <div class="service-desc">
+            Global CDN in front of S3 for fast, cached delivery.
+          </div>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon">🔌</div>
+          <div class="service-name">API Gateway</div>
+          <div class="service-desc">
+            Exposes the visitor-count endpoint over HTTPS.
+          </div>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon">⚡</div>
+          <div class="service-name">Lambda</div>
+          <div class="service-desc">
+            Python function that reads and increments the count.
+          </div>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon">🗄️</div>
+          <div class="service-name">DynamoDB</div>
+          <div class="service-desc">
+            Stores the visitor count as a single item.
+          </div>
+        </div>
+        <div class="service-card glass">
+          <div class="service-icon">🧱</div>
+          <div class="service-name">Terraform</div>
+          <div class="service-desc">
+            Provisions every resource above as reusable IaC modules.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section-wrap" id="projects">
+      <div class="section-eyebrow">What I've Built</div>
+      <div class="section-heading">Projects</div>
+      <p class="section-sub">
+        Real-world applications built with production-grade tools and practices.
+      </p>
+      <div class="projects-grid">
+        <!-- Wanderlust -->
+        <div class="project-card glass">
+          <div class="project-top">
+            <div class="project-icon">🌍</div>
+            <a
+              class="project-gh"
+              href="https://github.com/AbhishekThite387"
+              target="_blank"
+              >GitHub →</a
+            >
+          </div>
+          <div class="project-name">
+            Wanderlust — Full Stack Web Application
+          </div>
+          <ul class="project-points">
+            <li>
+              MVC Architecture: Built an Airbnb-inspired travel listing platform
+              following the Model-View-Controller pattern for a modular and
+              maintainable codebase.
+            </li>
+            <li>
+              User Authentication: Implemented secure login and session
+              management using Passport.js with flash messages for real-time
+              user feedback.
+            </li>
+            <li>
+              Core Features: Built full CRUD operations for listings and a
+              nested reviews system with RESTful routing, and integrated
+              Leaflet.js for interactive maps with a responsive Bootstrap UI.
+            </li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Node.js</span><span class="tag">Express.js</span>
+            <span class="tag">MongoDB</span><span class="tag">EJS</span>
+            <span class="tag">Passport.js</span><span class="tag">Leaflet</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Chatty -->
+        <div class="project-card glass">
+          <div class="project-top">
+            <div class="project-icon">💬</div>
+            <a
+              class="project-gh"
+              href="https://github.com/AbhishekThite387"
+              target="_blank"
+              >GitHub →</a
+            >
+          </div>
+          <div class="project-name">
+            Chatty — DevOps Real-Time Chat Application
+          </div>
+          <ul class="project-points">
+            <li>
+              Containerization: Containerized the full-stack application using
+              Docker and Docker Compose, orchestrating frontend, backend, and
+              MongoDB services with Nginx as a reverse proxy.
+            </li>
+            <li>
+              Real-Time Messaging: Configured JWT-based authentication,
+              Socket.io for instant bidirectional messaging, and user profile
+              management with online/offline presence tracking.
+            </li>
+            <li>
+              Cloud-Native Infrastructure: Authored Kubernetes manifests for
+              Deployments, Services, and Secrets to support container
+              orchestration, and explored CI/CD pipeline concepts using a
+              Jenkinsfile.
+            </li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">MERN</span><span class="tag">Socket.io</span>
+            <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+            <span class="tag">Jenkins</span><span class="tag">Nginx</span>
+            <span class="tag">JWT</span>
+          </div>
+        </div>
+
+        <!-- Cloud Resume Challenge — centerpiece -->
+        <div class="project-card glass featured">
+          <div class="project-top">
+            <div class="project-icon">☁️</div>
+            <a
+              class="project-gh"
+              href="https://github.com/AbhishekThite387"
+              target="_blank"
+              >GitHub →</a
+            >
+          </div>
+          <div class="project-name">Cloud Resume Challenge</div>
+          <ul class="project-points">
+            <li>
+              Developed a responsive resume website using HTML, CSS and
+              JavaScript.
+            </li>
+            <li>
+              Hosted the website on Amazon S3 and delivered content globally
+              using Amazon CloudFront.
+            </li>
+            <li>
+              Built a serverless visitor counter using Amazon API Gateway, AWS
+              Lambda and DynamoDB.
+            </li>
+            <li>
+              Provisioned AWS infrastructure using Terraform with reusable IaC
+              modules.
+            </li>
+            <li>
+              Connected the frontend to the backend using JavaScript Fetch API
+              for real-time visitor count.
+            </li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">AWS S3</span><span class="tag">CloudFront</span>
+            <span class="tag">Lambda</span><span class="tag">DynamoDB</span>
+            <span class="tag">API Gateway</span
+            ><span class="tag">Terraform</span>
+            <span class="tag">JavaScript</span><span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section-wrap" id="experience">
+      <div class="section-eyebrow">Where I've Worked</div>
+      <div class="section-heading">Internship Experience</div>
+      <p class="section-sub">
+        Hands-on internship building AI-powered backend systems at scale.
+      </p>
+      <div class="exp-card glass">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">AI/ML Intern</div>
+            <div class="exp-company">Infosys Springboard · Remote</div>
+          </div>
+          <div class="exp-date">Jan 2026 – Mar 2026</div>
+        </div>
+        <ul class="exp-points">
+          <li>
+            AI Application Development: Built an AI-powered Scientific
+            Terminology Explainer using Groq LLM (LLaMA 3.x) and FastAPI,
+            delivering explanations across 3 complexity levels (Beginner,
+            Intermediate, Advanced).
+          </li>
+          <li>
+            Multilingual Support: Extended application to support 3 languages,
+            making scientific content accessible to a broader audience.
+          </li>
+          <li>
+            Backend & Storage: Designed RESTful API endpoints with FastAPI and
+            integrated MongoDB for persistent storage of terminology queries and
+            generated responses.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section-wrap" id="education">
+      <div class="section-eyebrow">Academic Background</div>
+      <div class="section-heading">Education</div>
+      <p class="section-sub">
+        Engineering foundation with consistent academic performance.
+      </p>
+      <div class="edu-grid">
+        <div class="edu-card glass">
+          <div>
+            <div class="edu-degree">Bachelor of Engineering (BE) in EnTC</div>
+            <div class="edu-school">
+              Ajeenkya DY Patil School of Engineering, Pune · Maharashtra
+            </div>
+          </div>
+          <div class="edu-right">
+            <div class="edu-cgpa">8.58</div>
+            <div class="edu-year">Pursuing, 2023 – 2027</div>
+          </div>
+        </div>
+        <div class="edu-card glass">
+          <div>
+            <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+            <div class="edu-school">
+              Shri Chatrapati Shivaji Mahavidyalaya, Shrigonda · Ahilyanagar
+            </div>
+          </div>
+          <div class="edu-right">
+            <div class="edu-year">June 2022 – April 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section-wrap" id="certifications">
+      <div class="section-eyebrow">Achievements</div>
+      <div class="section-heading">Certifications &amp; Training</div>
+      <p class="section-sub">
+        Recognized for performance in competitive programs.
+      </p>
+      <div class="cert-grid">
+        <div class="cert-card glass">
+          <div class="cert-icon">🏆</div>
+          <div>
+            <div class="cert-name">Amazon ML Summer School 2025</div>
+            <div class="cert-issuer">
+              Amazon · Selected as a top applicant and successfully completed
+              all training modules covering ML fundamentals and applied AI
+              concepts.
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <div class="cert-name">Full Stack Web Development Training</div>
+            <div class="cert-issuer">
+              ApnaCollege · Completed comprehensive MERN stack training.
+            </div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-icon">⚡</div>
+          <div>
+            <div class="cert-name">Web Development Hackathon</div>
+            <div class="cert-issuer">
+              Inter-college · Participated and built a working prototype under
+              time constraints.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section-wrap" id="contact">
+      <div class="section-eyebrow">Say Hello</div>
+      <div class="section-heading">Get In Touch</div>
+      <p class="section-sub">
+        Open to DevOps, Cloud, and Backend roles. Let's connect.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card glass" href="mailto:thiteabhi443@gmail.com">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">thiteabhi443@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-card glass" href="tel:+918010374472">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-val">+91 8010374472</div>
+          </div>
+        </a>
+        <a
+          class="contact-card glass"
+          href="https://linkedin.com/in/abhishek"
+          target="_blank"
+        >
+          <div class="contact-icon">💼</div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-val">linkedin.com/in/abhishek</div>
+          </div>
+        </a>
+        <a
+          class="contact-card glass"
+          href="https://github.com/AbhishekThite387"
+          target="_blank"
+        >
+          <div class="contact-icon">🐙</div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-val">github.com/AbhishekThite387</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      Built by <span>Abhishek Thite</span> · Hosted on
+      <span>AWS S3 + CloudFront</span> · Infra via <span>Terraform</span>
+    </footer>
+
+    <script>
+      // ── HERO ROLES TYPEWRITER ──
+      const roles = ["DevOps Engineer", "Cloud & Infrastructure"];
+      const rolesEl = document.getElementById("hero-roles");
+      let rIdx = 0,
+        cIdx = 0,
+        deleting = false;
+
+      function typeRole() {
+        const current = roles[rIdx];
+        if (!deleting) {
+          cIdx++;
+          rolesEl.textContent = current.slice(0, cIdx);
+          if (cIdx === current.length) {
+            deleting = true;
+            setTimeout(typeRole, 1800);
+            return;
+          }
+        } else {
+          cIdx--;
+          rolesEl.textContent = current.slice(0, cIdx);
+          if (cIdx === 0) {
+            deleting = false;
+            rIdx = (rIdx + 1) % roles.length;
+          }
+        }
+        setTimeout(typeRole, deleting ? 45 : 85);
+      }
+      typeRole();
+
+      // ── SKILL PROGRESS BARS — scroll triggered ──
+      const bars = document.querySelectorAll(".bar-fill");
+      const barObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              el.style.width = el.dataset.width + "%";
+              barObserver.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+      bars.forEach((bar) => barObserver.observe(bar));
+
+      // ── SECTION REVEAL ON SCROLL (visual only, purely additive) ──
+      const sections = document.querySelectorAll(".section-wrap");
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              sectionObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      sections.forEach((s) => sectionObserver.observe(s));
+
+      // ── MOBILE NAV TOGGLE (additive only, does not touch script.js) ──
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = navMenu.classList.toggle('open');
+          navToggle.classList.toggle('active', isOpen);
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        navMenu.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
